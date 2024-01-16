@@ -32,6 +32,10 @@ services:
         resource: "../src/Hotel/Controller"
         tags: ['controller.service_arguments']
 
+    App\PaymentSystem\Controller:
+        resource: "../src/PaymentSystem/Controller"
+        tags: ['controller.service_arguments']
+
     App\Core\Twig\:
         resource: '../src/Core/Twig/*'
         arguments: ["@service_container", "@twig", "@router"]

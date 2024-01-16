@@ -33,6 +33,12 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Room/Entity'
                 prefix: 'App\Hotel\Entity'
                 alias: App
+            PaymentSystem:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/PaymentSystem/Entity'
+                prefix: 'App\PaymentSystem\Entity'
+                alias: App
 
 when@test:
     doctrine:
