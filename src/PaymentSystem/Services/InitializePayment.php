@@ -15,8 +15,11 @@ class InitializePayment
         $this->entityManager = $entityManager;
     }
 
-    // TODO: Implement Payment Value Object
-    public function init(PaymentValueObject $paymentObject)
+    /**
+     * @param PaymentValueObject $paymentObject
+     * @return void
+     */
+    public function init(PaymentValueObject $paymentObject) : void
     {
         $payment = new Payment();
         $payment->setDescription($paymentObject->getDescription());
